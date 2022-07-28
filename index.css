@@ -1,0 +1,170 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Variables */
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --blue-main-bg: hsl(217, 54%, 11%);
+    --blue-card-bg: hsl(216, 50%, 16%);
+    --blue-line-bg: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: .5rem;
+}
+
+body {
+    background-color: var(--blue-main-bg);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.125rem;
+}
+
+/* Layout */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 0 auto;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--blue-card-bg);
+    padding: 1.55rem;
+    width: 350px;
+    border-radius: 1rem;
+}
+
+.main-image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-color: hsl(178, 100%, 50%, 45%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: .5rem;
+}
+
+.overlay img {
+    margin: 7.5rem auto;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.description {
+    padding-top: 1rem;
+}
+
+.description h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.365rem;
+    margin-top: .5rem;    
+}
+
+.description h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.description p {
+    color: var(--soft-blue);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: .725rem;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--blue-line-bg);
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.amount p {
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.days p {
+    color: var(--soft-blue);
+    font-size: .95rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.profile img {
+    width: 2.1rem;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+}
+
+.profile h2 {
+    color: var(--soft-blue);
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.profile span {
+    color: var(--white);
+}
+
+.profile span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px; text-align: center;
+    color: var(--white);
+}
+.attribution a {
+    color: var(--soft-blue);
+}
